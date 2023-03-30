@@ -1,0 +1,18 @@
+Given a number N followed by N elements, find the second smallest element.If it cannot be found then print -1
+Input Size : N <= 100000 (ie do it in O(log n) time complexity)
+Sample Testcase :
+INPUT
+5
+1 2 3 4 5
+OUTPUT
+2
+
+
+N=int(input())
+no=list(map(int,input().split()))
+no.sort()
+if(no[0]==no[1]):
+  print(-1)
+  
+else:
+  print(no[1])
