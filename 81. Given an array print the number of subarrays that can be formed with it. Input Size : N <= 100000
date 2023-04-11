@@ -1,0 +1,13 @@
+Given an array print the number of subarrays that can be formed with it.
+Input Size : N <= 100000
+Sample Testcase :
+INPUT
+5
+1 2 3 2 1
+OUTPUT
+15
+
+n=int(input())
+a=list(map(int,input().split()))
+b=n*(n+1)//2
+print(b)
