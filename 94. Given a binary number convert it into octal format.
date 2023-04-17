@@ -1,0 +1,11 @@
+Given a binary number convert it into octal format.
+Sample Testcase :
+INPUT
+1100100
+OUTPUT
+144
+
+a=int(input(),2)
+#print(a)
+res=oct(a)
+print(res[2::])
