@@ -1,0 +1,28 @@
+Given a string S consisting of only '(' and ')', print 'yes' if it is balanced otherwise print 'no'.
+Sample Testcase :
+INPUT
+(())
+OUTPUT
+yes
+
+
+
+s=input()
+openingbraces = ['(', '[', '{']
+closingbraces = [')', ']', '}']
+st = []
+for x in s:
+  if x in openingbraces:
+    st.append(x)
+  if x in closingbraces:
+    if len(st) > 0:
+      ob = st.pop()
+      #print(ob)
+    else:
+      print("no")
+    if (x==')' and ob!='(') or (x==']' and ob!='[') or (x=='{' and ob!='}'):
+      print ("no")
+if len(st)==0:
+  print("yes")
+else:
+  print("no")
