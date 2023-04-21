@@ -1,0 +1,18 @@
+Given 2 strings and a number K, check whether they differ exactly by K characters.
+Input Size : |s| <= 100000(complexity O(nlogn) or O(n))
+Sample Testcase :
+INPUT
+codekata codeguvi 4
+OUTPUT
+yes
+
+
+n,m,k=input().split()
+diff=0
+for i in range(len(n)):
+  if n[i]!=m[i]:
+    diff+=1
+if diff == int(k):
+  print('yes')
+else:
+  print('no')
