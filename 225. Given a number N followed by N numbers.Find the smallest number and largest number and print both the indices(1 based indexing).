@@ -1,0 +1,15 @@
+Given a number N followed by N numbers.Find the smallest number and largest number and print both the indices(1 based indexing).
+Input Size : N <= 100000
+Sample Testcase :
+INPUT
+5
+1 2 3 4 5
+OUTPUT
+1 5
+
+
+N=int(input())
+no=list(map(int,input().split()))
+min_val=no.index(min(no))
+max_val=no.index(max(no))
+print(min_val+1,max_val+1)
