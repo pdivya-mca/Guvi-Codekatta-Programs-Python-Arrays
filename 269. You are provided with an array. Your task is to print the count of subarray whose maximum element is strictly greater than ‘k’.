@@ -6,7 +6,7 @@ First line contains two element ‘N’ and ‘k’.Second line contains ‘n’
 Output Description:
 Print the count of subarray whose maximum element’s value is strictly greater than ‘k’.
 
-Sample Input :
+ Input :
 5 4
 1 6 7 8 9
 Sample Output :
